@@ -15,7 +15,7 @@ This tutorial will be used to observe different forms of network traffic via Wir
 - Wireshark (Network Traffic Analyzer Tool)
 - SSH (Accessing Linux Terminal)
 - DNS (Website Traffic)
-- DHCP (Allocation of IP Addresses)
+- DHCP (Release and Renewal of Allocated IP Address)
 - RDP (Remotely Accessing Virtual Machines)
 
 <h2>Operating Systems Used </h2>
