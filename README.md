@@ -15,9 +15,13 @@ This project involves the creation of two virtual machines and the utilization o
 - Powershell (Communication with the Operating System)
 - Wireshark (Network Traffic Analyzer Tool)
 - SSH (Accessing Linux Terminal)
+  - TCP Port 22
 - DNS (Website Traffic Information)
+  - TCP and UDP Port 53
 - DHCP (IP Address Allocation)
+  - TCP Ports 67 and 68
 - RDP (Remotely Accessing Virtual Machines)
+  - TCP Port 3389
 
 <h2>Operating Systems Used </h2>
 
