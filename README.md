@@ -12,11 +12,11 @@ This project involves the creation of two virtual machines and the utilization o
 <h2>Platforms and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machine Deployment)
-- Powershell
+- Powershell (Communication with the Operating System)
 - Wireshark (Network Traffic Analyzer Tool)
 - SSH (Accessing Linux Terminal)
-- DNS (Website Traffic)
-- DHCP (Release and Renewal of Allocated IP Address)
+- DNS (Website Traffic Information)
+- DHCP (IP Address Allocation)
 - RDP (Remotely Accessing Virtual Machines)
 
 <h2>Operating Systems Used </h2>
