@@ -20,7 +20,7 @@ This tutorial will be used to observe different forms of network traffic via Wir
 - Windows 10 Pro
 - Linux (Ubuntu Server 20.04)
 
-<h2>High-Level Steps</h2>
+<h2>Configuration Steps</h2>
 
 - Step 1
 - Step 2
