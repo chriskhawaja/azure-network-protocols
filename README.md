@@ -3,7 +3,7 @@
 </p>
 
 <h1>Analyzing Network Traffic and Implementing Network Security Groups</h1>
-In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+This tutorial will be used to observe different forms of network traffic via Wireshark, as well as using Network Security Groups to block ICMP traffic. <br />
 
 
 <h2>Environments and Technologies Used</h2>
