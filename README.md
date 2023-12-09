@@ -17,8 +17,8 @@ This tutorial will be used to observe different forms of network traffic via Wir
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10 (21H2)
-- Ubuntu Server 20.04
+- Windows 10 Pro
+- Linux (Ubuntu Server 20.04)
 
 <h2>High-Level Steps</h2>
 
