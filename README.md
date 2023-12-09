@@ -12,6 +12,7 @@ This project involves the creation of two virtual machines and the utilization o
 <h2>Platforms and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machine Deployment)
+- Powershell
 - Wireshark (Network Traffic Analyzer Tool)
 - SSH (Accessing Linux Terminal)
 - DNS (Website Traffic)
