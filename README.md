@@ -28,7 +28,7 @@ This project involves the creation of two virtual machines and the utilization o
 - Windows 10 Pro
 - Linux (Ubuntu Server 20.04)
 
-<h2>Project Installation</h2>
+<h2>Project Installation Steps</h2>
 
 - Step 1
 - Step 2
