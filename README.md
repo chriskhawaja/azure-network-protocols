@@ -62,10 +62,14 @@ This project involves the creation of two virtual machines and the utilization o
   - Have fun analyzing network traffic!
   - ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/bd4a5ea6-9da4-4706-8a86-364312b0e281)
 
-<h2>Actions and Observations</h2>
+<h2>Project Demonstration</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/8a3a3b1a-f29b-4029-9cad-c88574cb6bed)
+![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/577b7521-d087-45c4-b0f6-77296befd9c8)
+![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/474a5560-0075-4f1c-b537-7641dd519f2a)
+
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
