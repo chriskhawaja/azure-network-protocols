@@ -6,13 +6,14 @@
 This tutorial will be used to observe different forms of network traffic via Wireshark, as well as using Network Security Groups to block ICMP traffic. <br />
 
 
-<h2>Environments and Technologies Used</h2>
+<h2>Platforms and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Various Command-Line Tools
-- Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
-- Wireshark (Protocol Analyzer)
+- Microsoft Azure (Virtual Machine Deployment)
+- Wireshark (Network Traffic Analyzer Tool)
+- SSH (Accessing Linux Terminal)
+- DNS (Website Traffic)
+- DHCP (Allocation of IP Addresses)
+- RDP (Remotely Accessing Virtual Machines)
 
 <h2>Operating Systems Used </h2>
 
