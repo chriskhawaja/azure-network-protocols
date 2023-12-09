@@ -1,5 +1,6 @@
 <p align="center">
-<img src="https://i.imgur.com/Ua7udoS.png" alt="Traffic Examination"/>
+<img src="![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/dcb3c5c8-a430-44bb-8aed-87ae5a5bea14)
+"/>
 </p>
 
 <h1>Analyzing Network Traffic and Implementing Network Security Groups</h1>
