@@ -107,7 +107,31 @@ This project involves the creation of two virtual machines and the utilization o
   - To access VM2 using VM1, be sure to input SSH Username@IP Address
     - The username and IP address of the VM that you are trying to access
    
+![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/dcec2035-05ec-472a-8a8f-12645b2a06fc)
+- Once we filter for Remote Desktop Protocol traffic, we can see the inundation of traffic
+  - This is because we are literally using RDP to access our VM
+ 
+  ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/20ff0139-ebf7-4af2-b4e8-7e5ab8ac5f94)
+- After visiting different websites on our VM, we can see all the DNS information on Wireshark
+- Additionally after utilizing the command "ipconfig /displaydns", we can see that our cache is full of informatio
 
+  ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/4f6a5650-6f0a-46c3-ba8b-602a661b59c9)
+- To flush our DNS cache, we can use the "ipconfig /flushdns" command
+  - This command is really important when users are experiencing a multitude of DNS issues
+ 
+![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/67e1cf2c-17f3-4859-8201-12f1d177169b)
+- To view our DHCP and DNS servers, we can type the command "ipconfig /all" into command prompt
+
+  ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/e20a6d00-e5f7-4516-9a66-daf11afcfbaf)
+- DHCP traffic can be analyzed by using the "ipconfig /release" and "ipconfig /renew" commands
+  - The release command will tell our DHCP server to get rid of our current IP address, which was given to us via DHCP
+  - The renew command will give us a new allocated IP address that is dynamically given via DHCP
+  - Not that when you use these commands, your connection may be lost since we have "released" the VM's current IP address
+ 
+  ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/cad81990-28a6-4ddd-aea6-5eee091ed677)
+  - You can now see in Wireshark, the steps of DHCP release and renewal
+    - The DORA process highlights how a Client and DHCP Server communicate
+      - Discovery, Offer, Request, and Acknowledge 
       
 </p>
 <p>
