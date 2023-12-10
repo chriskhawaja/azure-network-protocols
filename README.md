@@ -81,7 +81,7 @@ This project involves the creation of two virtual machines and the utilization o
 ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/0671b969-85bd-41ab-bcf3-0f04519b67ac)
   - We can see there is a connection established between VM1 and VM2 via the non-stop ping command
     - ping 10.0.0.5 -t
-      - This command can be entered into command prompt by typing "cmd" in the star menu below
+      - This command can be entered into command prompt by typing "cmd" in the start menu below
         - Make sure that before clicking cmd, right-click and select "run as administrator"
 - 10.0.0.5 is the private IP Address of our Linux Virtual Machine
 
