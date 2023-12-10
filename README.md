@@ -12,6 +12,7 @@ This project involves the creation of two virtual machines and the utilization o
 <h2>Platforms and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machine Deployment)
+- Azure Resource Group (Contains VM's)
 - Command Prompt (Communication with the Operating System)
 - Wireshark (Network Traffic Analyzer Tool)
 - SSH (Accessing Linux Terminal)
