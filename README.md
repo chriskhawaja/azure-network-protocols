@@ -30,34 +30,46 @@ This project involves the creation of two virtual machines and the utilization o
 
 <h2>Project Installation Steps</h2>
 
-- Step 1 (Create a Resource Group within Microsoft Azure)
+- Step 1
+  - Create a Resource Group within Microsoft Azure
 ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/36006b36-ffd9-41f5-9f41-7f04ae2ce17e)
 
-- Step 2 (Create an Azure Virtual Machine running a Windows 10 Pro Image) - within the Resource Group that was created
-  - Ensure that 2 Virtual CPU's are selected for each VM
+- Step 2  - within the Resource Group that was created
+  - Create an Azure Virtual Machine running a Windows 10 Pro Image
+  - Make sure to place this Virtual Machine into the resource group that was created
+  - Ensure that 2 Virtual CPU's are selected for each Virtual Machine
   ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/baef5b4a-f3ed-40d2-90d6-fcd570da6d1c)
 
-- Step 3 (Repeat the same process and create a Virtual Machine with an Ubuntu Server Image)
+- Step 3
+  - Repeat the same process and create a Virtual Machine with an Ubuntu Server Image
   - Make sure that both Virtual Machines are on the same Virtual Network   
-![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/f4cd71bc-35c3-4753-a4c2-0860fadf57f2)
+![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/c12876b3-2705-4d20-a23a-297d160110e4)
 
-- Step 4 (Utilizing RDP on Windows, Remote into Virtual Machine 1 (Windows Pro) - by typing in the IP Address
+
+
+- Step 4
+  - Utilizing RDP on Windows, remote into Virtual Machine 1 (Windows Pro) - by typing in the IP Address
   - If using a Mac computer, go to the app store and download the Microsoft Remote Desktop application
   - You will be prompted with a login screen - use the credentials you provided during the virtual machine creation process
-![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/9bea59e4-e387-42fc-90d8-9752cb7841e2)
+![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/6d103328-f103-429d-aef5-f47c17e1aa1b)
 
-- Step 5 (Once you are booted into the Virtual Machine, proceed to download Wireshark
+
+- Step 5
+  - Once you are booted into the Virtual Machine, proceed to download Wireshark
   - Type in "Download Wireshark" on a Google Search
     ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/0fb98c1c-7feb-4465-8ba6-9e4914726d40)
 
-- Step 6 (Once you are finished downloading Wireshark, boot up Wireshark by searchin for the program towards the bottom left corner of the screen)
-
+- Step 6
+  - Once you are finished downloading Wireshark, boot up Wireshark by searching for the program towards the bottom left corner of the screen
+  
    ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/4929ebc0-2736-48f7-bec3-81b7cb40ae7a)
 
-- Step 7 (Once you are in Wireshark, be sure to select Ethernet)
+- Step 7
+  - Once you are in Wireshark, be sure to select Ethernet
   ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/f4463c38-3339-439e-9e2c-1ce43ee360a5)
 
-- Step 8 (You will begin to see multiple streams of network traffic be displayed)
+- Step 8
+  - You will begin to see multiple streams of network traffic be displayed
   - Above the network traffic, where it says "Apply a Display Filter" in the white box, type in whatever traffic you would like to be displayed
   - Have fun analyzing network traffic!
   - ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/bd4a5ea6-9da4-4706-8a86-364312b0e281)
@@ -66,10 +78,37 @@ This project involves the creation of two virtual machines and the utilization o
 
 <p>
 
-  ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/8a3a3b1a-f29b-4029-9cad-c88574cb6bed)
-![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/577b7521-d087-45c4-b0f6-77296befd9c8)
-![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/474a5560-0075-4f1c-b537-7641dd519f2a)
+![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/0671b969-85bd-41ab-bcf3-0f04519b67ac)
+  - We can see there is a connection established between VM1 and VM2 via the non-stop ping command
+    - ping 10.0.0.5 -t
+      - This command can be entered into command prompt by typing "cmd" in the star menu below
+        - Make sure that before clicking cmd, right-click and select "run as administrator"
+- 10.0.0.5 is the private IP Address of our Linux Virtual Machine
 
+![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/aecc41e7-943b-488c-91b5-9365e1bfb142)
+- We will now block this connection by going back to Microsoft Azure, and typing in "Network Security Groups" into the search bar
+- On the left, we can click the "Inbound Security Rules" tab, and click the add button - this tab is selected because we want to block any ICMP traffic coming into VM2, hence the word "inbound"
+- Be sure to select ICMP as the protocol and the deny option
+  - ICMP stands for Internet Control Message Protocol, and is the protocol that is used when using the ping command
+- Lastly, select the add button, and the security rule will be created
+
+![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/ca61784b-48d5-4c3d-86fc-db57538c90a9)
+- Now, we can observe that any traffic being sent to VM2 is being blocked
+
+  ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/25ae8002-6238-4782-bf84-f59863d0d4a3)
+- We can reverse this process by going back to our NSG for VM2, selecting the rule we created, and clicking the allow button under ICMP
+- Be sure to press "save" and the rule will be created
+
+  ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/7d98f982-45f0-4928-8eb8-1af9450b4d3b)
+- We can see the replies from VM2 coming back after we changed the inbound rule 
+
+![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/dcaf8831-58c9-4eee-8774-a0f187424535)
+- Utilizing SSH, we can also acces the Linux terminal of VM2 from VM1
+  - To access VM2 using VM1, be sure to input SSH Username@IP Address
+    - The username and IP address of the VM that you are trying to access
+   
+
+      
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
