@@ -113,7 +113,7 @@ This project involves the creation of two virtual machines and the utilization o
  
   ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/20ff0139-ebf7-4af2-b4e8-7e5ab8ac5f94)
 - After visiting different websites on our VM, we can see all the DNS information on Wireshark
-- Additionally after utilizing the command "ipconfig /displaydns", we can see that our cache is full of informatio
+- Additionally after utilizing the command "ipconfig /displaydns", we can see that our cache is full of information
 
   ![image](https://github.com/chriskhawaja/azure-network-protocols/assets/153021794/4f6a5650-6f0a-46c3-ba8b-602a661b59c9)
 - To flush our DNS cache, we can use the "ipconfig /flushdns" command
