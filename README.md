@@ -134,3 +134,4 @@ This project involves the creation of two virtual machines and the utilization o
     - The DORA process highlights how a Client and DHCP Server communicate
       - Discovery, Offer, Request, and Acknowledge 
       
+**** Picture used at the top of personal project is not mine (taken from Google)
